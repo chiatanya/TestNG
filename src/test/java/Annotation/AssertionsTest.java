@@ -48,7 +48,7 @@ public class AssertionsTest {
       driver.findElement(By.cssSelector(".genderbutton")).getText();
     String actualAgeGroup =
       driver.findElement(By.cssSelector(".groupradiobutton")).getText();
-    softAssert.assertEquals(actualGender, "Male",
+    softAssert.assertEquals(actualGender, "Other",
             "\n Actual Gender Is Not Correct \n");
     softAssert.assertTrue(actualAgeGroup.contains("15"),
             "\n Actual Age Group Is Not Correct \n");
