@@ -26,7 +26,7 @@ pipeline {
                 archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
 				echo 'Test results and JAR file archived successfully.'
 
-			
+		}	
     } 
 	 stage("Email Build"){
 		steps{
@@ -36,4 +36,4 @@ pipeline {
     
     }
 }
-}
+
