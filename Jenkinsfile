@@ -27,7 +27,12 @@ pipeline {
 				echo 'Test results and JAR file archived successfully.'
 
 			
-    }
+    } 
+	 stage("Email Build"){
+		steps{
+		mail bcc: '', body: 'Chill just the Error Test', cc: '', from: '', replyTo: '', subject: 'Error in something', to: 'chegde99@gmail.com'
+		}
+	 }
     
     }
 }
