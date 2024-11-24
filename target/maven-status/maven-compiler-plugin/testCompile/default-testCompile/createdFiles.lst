@@ -1,0 +1,14 @@
+Annotation\dataprovider.class
+Annotation\CrossBrowserTesting.class
+Annotation\configannotations2.class
+Annotation\a.class
+Annotation\ParallelTesting2.class
+Annotation\ParallelTesting1.class
+Annotation\DynamicWaits.class
+Annotation\seleniumcloudjiolocation.class
+Annotation\AssertionsTest.class
+Annotation\Geolocation.class
+Annotation\Automation_TakeScreenshot.class
+Annotation\Automation_with_anotation.class
+Annotation\Autmation_Paramaterized.class
+Annotation\configannotations1.class
