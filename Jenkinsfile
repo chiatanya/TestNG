@@ -19,7 +19,16 @@ pipeline {
                 bat 'mvn package'
             }
         }
+		stage("consolidate Results"){
+			steps{
+				input("Do you want to capture the results")
+				junit '*target/surefire-reports/junitreports/TEST-*.xml'
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
+				echo 'Test results and JAR file archived successfully.'
+
+			
     }
     
     }
-
+}
+}
